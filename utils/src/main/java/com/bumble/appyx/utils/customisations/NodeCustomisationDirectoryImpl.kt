@@ -43,7 +43,7 @@ open class NodeCustomisationDirectoryImpl(
         return map[subDir] as? NodeCustomisationDirectory ?: this
     }
 
-    operator fun KClass<out Any>.invoke(block: NodeCustomisationDirectoryImpl.() -> Unit) {
+    operator fun KClass<*>.invoke(block: NodeCustomisationDirectoryImpl.() -> Unit) {
         if (map.containsKey(this)) {
             // TODO warning for accidental override?
         }
