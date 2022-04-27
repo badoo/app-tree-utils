@@ -1,4 +1,4 @@
-package com.bumble.appyx.sandbox.customisations
+package com.bumble.appyx.utils.customisations
 
 import kotlin.reflect.KClass
 
